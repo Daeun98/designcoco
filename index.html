@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/rwdindex.css">
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
 </head>
@@ -26,7 +27,8 @@
             </div>
             <div class="row">
                 <h1><a href="/index.html"><img src="./img/logo.png" alt="디자인코코"></a></h1>
-                    <nav id="nav">
+                <div class="open"><i class="fas fa-bars"></i></div>
+                <nav class="nav">
                         <ul class="depth1 cf">
                             <li><a href="#none">회사소개</a>
                                 <ul class="depth2">
@@ -67,7 +69,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </nav>
+                </nav>
+                <div class="close"><i class="fas fa-times"></i></div>
             </div>
         </header>
         <section id="section">
@@ -95,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+                <button type="button" class="plpa"><i class="fas fa-pause"></i></button>
             </article>
             <article class="article2 row">
                 <h2>What We Do</h2>
@@ -230,11 +234,11 @@
                 <div class="row">
                     <div class="cs_board">
                         <ul class="tabmenu">
-                            <li class="">공지사항</li>
-                            <li class="active">뉴스&amp;이벤트</li>
+                            <li class="active">공지사항</li>
+                            <li class="">뉴스&amp;이벤트</li>
                         </ul>
                         <div class="contents">
-                            <div class="">
+                            <div class="active">
                                 <table>
                                     <caption class="blind">공지사항</caption>
                                     <colgroup>
@@ -266,7 +270,7 @@
                                 </table>
                                 <a href="#none" class="more">more1</a>
                             </div>
-                            <div class="active">
+                            <div class="">
                                 <table>
                                     <caption class="blind">뉴스이벤트</caption>
                                     <colgroup>
@@ -350,18 +354,7 @@
 
     </div>
 
-    <script>
-
-        $(".slide-group").slick({           
-            autoplay: true, // 자동재생
-            autoplaySpeed: 3000, // 간격시간
-            dots: true, // 동그라미버튼
-            pauseOnFocus: false, // 동그라미번호버튼 클릭시 자동실행 멈춤여부
-            prevArrow: '<button class="prev"><i class="fas fa-angle-left"></i></button>',
-            nextArrow: '<button class="next"><i class="fas fa-angle-right"></i></button>',
-            })
-
-    </script>
+    <script src="js/index.js"></script>
     
 </body>
 </html>

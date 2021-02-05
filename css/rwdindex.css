@@ -1,0 +1,38 @@
+@media screen and (max-width:1024px) {
+    #header h1 {padding:20px 40px;}
+    #header .nav {z-index:999999;
+        position: absolute; top:100%; right: 0;
+        transform: translateY(0%);
+        font-size:18px; color:#1e1e1e;
+        background:#fff; width:180px;
+        display:none;
+    }
+    #header .nav .depth1 > li {
+        float:none; position:relative;
+        font-weight: bold; text-align:center;}
+    #header .nav .depth2 {
+        background:#fff; color:#555; font-size:14px;
+        position:static; top:100%; left:0%;
+        text-align:center;
+        z-index:999999; width:100%;
+        display:none; transition:all 0.3s;
+    }
+    #header .nav .depth2 > li > a {display:block;
+        padding:15px 0; border-bottom:0px solid #666}
+    #header .open,
+    #header .close {position:absolute; top:50%; right:40px;
+        transform:translateY(-50%); font-size:40px; color:#000;
+        display: block;}
+    #header .close { display:none; right:43.5px;}
+
+
+
+
+
+
+
+
+
+
+
+}
